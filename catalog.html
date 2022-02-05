@@ -4,18 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header class="page-header">
         <nav class="navigation">
             <article class="navigation-user">
-                <h2 class="visually-hidden">Навигация</h2>
+                <h2 class="visually-hidden" hidden>Навигация</h2>
                 <div class="header-logo">
                     <img class="logo" src="images/Main-page/logo-sedona.svg" width="63" height="35" alt="Логотип">
                 </div>
                 <section class="navigation-item">
-                    <h2 class="visually-hidden">Раздел навигации</h2>
+                    <h2 class="visually-hidden" hidden>Раздел навигации</h2>
                     <div class="search-container">
                         <ul class="navigation-items">
                             <li><a class="navigation-link" href="index.html">Главная</a>
@@ -44,91 +45,94 @@
         </nav>
     </header>
     <main class="navigation-index">
-        <h2 class="visually-hidden">Раздел навигации</h2>
-        <section class="navigation-item">
-            <h2 class="hotels-sedona">Гостиницы Седоны</h2>
-            <ul class="navigation-items">
-                <li><a class="navigation-link-to-home" href="index.html">Домой</a></li>
-                <li><a class="navigation-link-to-hotels" href="catalog.html">Гостиницы</a></li>
-            </ul>
-        </section>
-        <section class="goods-inner">
-            <div class="goods-catalog">
-                <h3 class="visually-hidden">Фильтр:</h3>
-                <form class="goods-filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="grop-filter">
-                        <fieldset class="goods-filter-group">
-                            <legend class="goods-filter-title">Инфраструктура:</legend>
-                            <ul class="goods-filter-list">
-                                <li class="goods-filter-item">
-                                    <input class="control-input" type="checkbox" name="pool" checked>
-                                    <label class="control">Бассейн</label>
-                                </li>
-                                <li class="goods-filter-item">
-                                    <input class="control-input" type="checkbox" name="parking" checked>
-                                    <label class="control">Парковка</label>
-                                </li>
-                                <li class="goods-filter-item">
-                                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                                    <label class="control">Wi-Fi</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
+        <h2 class="visually-hidden" hudden>Раздел навигации</h2>
+        <div class="navigation-hotels">
+            <section class="breadcrumbs-hotel">
+                <h2 class="hotels-sedona">Гостиницы Седоны</h2>
+                <ul class="navigation-hotels-list">
+                    <li class="breadcrumbs-items"><a class="navigation-link-to-home" href="index.html">Домой</a></li>
+                    <li class="breadcrumbs-items"><a class="navigation-link-to-hotels" href="catalog.html">Гостиницы</a></li>
+                </ul>
+            </section>
+            <section class="goods-inner">
+                <div class="goods-catalog">
+                    <h3 class="visually-hidden">Фильтр:</h3>
+                    <form class="goods-filter" action="https://echo.htmlacademy.ru/" method="get">
+                        <div class="grop-filter">
+                            <fieldset class="goods-filter-group">
+                                <legend class="goods-filter-title">Инфраструктура:</legend>
+                                <ul class="goods-filter-list">
+                                    <li class="goods-filter-item">
+                                        <input class="control-input" type="checkbox" name="pool" checked>
+                                        <label class="control">Бассейн</label>
+                                    </li>
+                                    <li class="goods-filter-item">
+                                        <input class="control-input" type="checkbox" name="parking" checked>
+                                        <label class="control">Парковка</label>
+                                    </li>
+                                    <li class="goods-filter-item">
+                                        <input class="control-input" type="checkbox" name="Wi-Fi">
+                                        <label class="control">Wi-Fi</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
 
 
-                    <div class="grop-filter">
-                        <fieldset class="goods-filter-group">
-                            <legend class="goods-filter-title">Тип жилья:</legend>
-                            <ul class="goods-filter-list">
-                                <li class="goods-filter-item">
-                                    <label class="control">
+                        <div class="grop-filter">
+                            <fieldset class="goods-filter-group">
+                                <legend class="goods-filter-title">Тип жилья:</legend>
+                                <ul class="goods-filter-list">
+                                    <li class="goods-filter-item">
+                                        <label class="control">
                                       <input class="visually-hidden control-input" type="radio" name="Тип жилья:"
                                           value="hotels" checked>
                                       <span class="control-mark"></span>
                                       <span class="control-label">Гостиница</span>
                                   </label>
-                                </li>
-                                <li class="goods-filter-item">
-                                    <label class="control">
+                                    </li>
+                                    <li class="goods-filter-item">
+                                        <label class="control">
                                       <input class="visually-hidden control-input" type="radio" name="Тип жилья:"
                                           value="motels">
                                       <span class="control-mark"></span>
                                       <span class="control-label">Мотель</span>
                                   </label>
-                                </li>
-                                <li class="goods-filter-item">
-                                    <label class="control">
+                                    </li>
+                                    <li class="goods-filter-item">
+                                        <label class="control">
                                     <input class="visually-hidden control-input" type="radio" name="Тип жилья:"
                                         value="lagre-apartament">
                                     <span class="control-mark"></span>
                                     <span class="control-label">Апартаменты</span>
                                 </label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
-                    <div class="filter-cost">
-                        <fieldset class="goods-filter-group">
-                            <legend class="goods-filter-title">Стоимость</legend>
-                            <label class="goods-filter-input">От 0</label>
-                            <label class="goods-filter-input">До 9000</label>
-                            <div class="goods-filter-input">
-                                <button class="goods-filter-button" type="button">
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                        <div class="grop-filter">
+                            <fieldset class="goods-filter-group">
+                                <legend class="goods-filter-title">Стоимость</legend>
+                                <label class="goods-filter-input">От 0</label>
+                                <label class="goods-filter-input">До 9000</label>
+                                <div class="goods-filter-input">
+                                    <button class="goods-filter-button" type="button">
                                 <span class="visually-hidden">Дешевле</span>
                             </button>
-                                <button class="goods-filter-button" type="button">
+                                    <button class="goods-filter-button" type="button">
                                 <span class="visually-hidden">Дороже</span>
                             </button>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div class="filter-button">
-                        <button class="bth" type="submit">Применить</button>
-                        <button class="bth" type="submit">Сбросить</button>
-                    </div>
-                </form>
-            </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="filter-button">
+                            <button class="bth" type="submit">Применить</button>
+                            <button class="bth" type="submit">Сбросить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
         </section>
         <div class="goods-catalog-list">
             <div class="sorting-list">
