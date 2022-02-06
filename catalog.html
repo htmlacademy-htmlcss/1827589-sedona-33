@@ -13,7 +13,7 @@
             <article class="navigation-user">
                 <h2 class="visually-hidden" hidden>Навигация</h2>
                 <div class="header-logo">
-                    <img class="logo" src="images/Main-page/logo-sedona.svg" width="63" height="35" alt="Логотип">
+                    <img class="logo" src="images/Main-page/logo-sedona.svg" width="139" height="70" alt="Логотип">
                 </div>
                 <section class="navigation-item">
                     <h2 class="visually-hidden" hidden>Раздел навигации</h2>
@@ -45,7 +45,7 @@
         </nav>
     </header>
     <main class="navigation-index">
-        <h2 class="visually-hidden" hudden>Раздел навигации</h2>
+        <h2 class="visually-hidden" hidden>Раздел навигации</h2>
         <div class="navigation-hotels">
             <section class="breadcrumbs-hotel">
                 <h2 class="hotels-sedona">Гостиницы Седоны</h2>
@@ -56,7 +56,7 @@
             </section>
             <section class="goods-inner">
                 <div class="goods-catalog">
-                    <h3 class="visually-hidden">Фильтр:</h3>
+                    <h3 class="visually-hidden" hidden>Фильтр:</h3>
                     <form class="goods-filter" action="https://echo.htmlacademy.ru/" method="get">
                         <div class="grop-filter">
                             <fieldset class="goods-filter-group">
@@ -138,7 +138,7 @@
             <div class="sorting-list">
                 <h2 class="sorting-title">Найдено гостиниц:<span> 38</span></h2>
                 <form class="sorting-type">
-                    <label class="visually-hidden" for="sorting">Сортировка:</label>
+                    <label class="visually-hidden" for="sorting" hidden>Сортировка:</label>
                     <select class="select-control" id="sorting" name="sorting">
                           <option value="cheap">Сначала дешёвые</option>
                           <option value="expensive">Сначала дорогое</option>
@@ -219,24 +219,27 @@
                 </ul>
             </section>
         </div>
-        <div class="paginatiion">
+        <div class="pagination">
             <button class="button-pagination" type="button">Загрузить ещё</button>
         </div>
         <div class="pagination-list">
-            <ul class="pagination">
-                <li class="pagination-item">
+            <ul class="pagination-item">
+                <li class="pagination-items">
                     <a class="pagination-link" href="#">1</a>
                 </li>
-                <li class="pagination-item">
+                <li class="pagination-items">
                     <a class="pagination-link" href="#">2</a>
                 </li>
-                <li class="pagination-item">
+                <li class="pagination-items">
                     <a class="pagination-link" href="#">3</a>
                 </li>
-                <li class="pagination-item">
+                <li class="pagination-items">
+                    <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-items">
                     <a class="pagination-link" href="#">...</a>
                 </li>
-                <li class="pagination-item">
+                <li class="pagination-items">
                     <a class="pagination-link" href="#">10</a>
                 </li>
             </ul>
@@ -251,23 +254,23 @@
             </form>
         </div>
         <section class="distribution-free-catalog">
-            <h2 class="visually-hidden">Подпишись</h2>
+            <h2 class="visually-hidden" hidden>Подпишись</h2>
             <div class="distribution-conteiner">
                 <div class="distribution">
-                    <h2 class="diskribution-title">Подпишитесь на рассылку</h2>
-                    <p class="diskribution-text">Только полезная информация и никакого спама, честное бойскаутское!
+                    <h2 class="diskribution-title diskribution-title-catalog">Подпишитесь на рассылку</h2>
+                    <p class="diskribution-text diskribution-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!
                     </p>
                 </div>
                 <div class="of-free">
-                    <form method="post">
-                        <input type="email" name="email" value="Ваш e-mail" required>
-                        <button type="submit" id="free" value="Подписаться"><span>Подписаться</span> </button>
+                    <form class="free-form diskribution-form" method="post">
+                        <input class="email" type="email" name="email" value="Ваш e-mail" required>
+                        <button class="btn" type="submit" id="free" value="Подписаться"><span>Подписаться</span> </button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer-item">
         <div class="footer-social">
             <ul class="social">
                 <li class="social-item">
