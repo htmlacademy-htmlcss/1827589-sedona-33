@@ -382,7 +382,7 @@ body {
     height: 20px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 0;
+    border: 5px;
     border-radius: 0.25em;
     margin-right: 0.5em;
     background-color: #ffffff;
@@ -401,6 +401,8 @@ body {
     border: 3px solid;
     border-radius: 3px;
     border-color: #83B3D3;
+    width: 14px;
+    height: 14px;
     outline: none;
 }
 
@@ -451,6 +453,8 @@ body {
 .input-control:focus+label::before {
     opacity: 0.7;
     border: 3px solid;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border-color: #83B3D3;
     outline: none;
@@ -574,6 +578,12 @@ body {
 
 .price-controls:hover {
     opacity: 0.7;
+}
+
+.price-controls:focus {
+    border: 9px solid;
+    border-color: green;
+    outline: none;
 }
 
 .price-controls:active {
@@ -862,8 +872,8 @@ body {
     opacity: 0.7;
 }
 
-.hotels-card-image:focus {
-    border: 3px solid;
+.min-price:focus {
+    border: 7px solid;
     border-color: #83B3D3;
 }
 
