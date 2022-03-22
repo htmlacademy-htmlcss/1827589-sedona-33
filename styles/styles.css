@@ -1684,6 +1684,7 @@ button:active span {
     margin: auto;
     padding: 40px 70px;
     background-color: #ffffff;
+    display: none;
 }
 
 .modal-auth {
