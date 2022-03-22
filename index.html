@@ -188,31 +188,31 @@
             <form class="modal-windows" action="https://echo.htmlacademy.ru/courses" method="post">
                 <div class="modal-section">
                     <div class="two-third-width">
-                        <label class="date-arrival" for="arrival-date">Дата заезда:</label>
-                        <input class="day" type="day" id="data" name="month" value="27 апреля 2020">
-                        <label class="month-comments day-comments" for="day">Мы не можем отправить вас в прошлое.</label>
+                        <label class="date-arrival" for="start">Дата заезда:</label>
+                        <input class="day" type="date" id="start" name="trip-start" value="27.4.2020">
+                        <label class="month-comments day-comments" for="start">Мы не можем отправить вас в прошлое.</label>
                     </div>
                     <div class="two-third-width">
-                        <label class="date-arrival" for="arrival-date">Дата выезда:</label>
-                        <input class="day" type="day" id="data" name="day" value="1 сентября 2021">
-                        <label class="month-comments" for="day">На эти даты есть свободные номера. Пока есть.</label>
+                        <label class="date-arrival" for="end">Дата выезда:</label>
+                        <input class="day" type="date" id="end" name="trip-end" value="1.9.2021">
+                        <label class="month-comments" for="end">На эти даты есть свободные номера. Пока есть.</label>
                     </div>
                     <div class="numbers-of-visitor">
                         <div class="adults">
                             <label class="date-arrival" for="number">Взрослые:</label>
-                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img class="min-visitor" src="./images/Main-page/min-visitor.svg" width="13px" height="1px" alt="меньше количество."></button>
+                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img class="min-visitor" src="./images/Main-page/min-visitor.svg" width="13" height="1" alt="меньше количество."></button>
                             <input class="number sss" type="number" id="number" name="number" value="2">
-                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img class="max-visitor" src="./images/Main-page/max-visitor.svg" width="13px" height="13px" alt="больше количество."></button>
+                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img class="max-visitor" src="./images/Main-page/max-visitor.svg" width="13" height="13" alt="больше количество."></button>
                         </div>
                         <div class="kids">
                             <label class="date-arrival kids-data" for="number">Дети:</label>
                             <a class="kids-info">
                                 <div id="info-kids" data-name="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
-                                    <img class="info-kids" src="./images/Main-page/kids-info.svg" width="1px" height="9px" alt="Информация о детях."></div>
+                                    <img class="info-kids" src="./images/Main-page/kids-info.svg" width="1" height="9" alt="Информация о детях."></div>
                             </a>
-                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img class="min-visitor" src="./images/Main-page/min-visitor.svg" width="13px" height="1px" alt="меньше количество."></button>
-                            <input class="number sss " type="number" id="number" name="number" value="1">
-                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img class="max-visitor" src="./images/Main-page/max-visitor.svg" width="13px" height="13px" alt="больше количество."></button>
+                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"><img class="min-visitor" src="./images/Main-page/min-visitor.svg" width="13" height="1" alt="меньше количество."></button>
+                            <input class="number sss " type="number" id="quantity" name="number" value="1">
+                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><img class="max-visitor" src="./images/Main-page/max-visitor.svg" width="13" height="13" alt="больше количество."></button>
                         </div>
 
                     </div>
@@ -221,9 +221,8 @@
                 <div class="buttons">
                     <input class="buttons-modal" type="submit" value="найти">
                 </div>
+            </form>
         </div>
-        </form>
-    </div>
     </div>
 </body>
 

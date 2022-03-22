@@ -1670,7 +1670,6 @@ button:active span {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.15);
-    display: none;
 }
 
 .modal-windows {
@@ -1888,6 +1887,7 @@ input[type="number"]::-webkit-inner-spin-button {
 #info-kids:hover:before {
     position: absolute;
     content: attr(data-name);
+    color: transparent;
     top: 36px;
     left: 2px;
     background-image: url("/images/Main-page/prompting.svg");
