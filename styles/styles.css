@@ -159,7 +159,7 @@ body {
     width: 124px;
     margin: 0;
     margin-left: 20px;
-    padding: 6px 12px;
+    padding: 6px 15px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1111,6 +1111,7 @@ body {
 
 .pagination-items {
     display: flex;
+    margin: 0 4px;
 }
 
 .pagination-link {
@@ -1118,14 +1119,12 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
+    width: 49px;
     display: flex;
     justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
-    width: 47px;
-    margin: 0 4px 0 4px;
-    padding: 12px 0;
+    padding: 14px 0;
     border-radius: 4px;
     color: #ffffff;
     background-color: #83B3D3;
@@ -1138,7 +1137,7 @@ body {
 }
 
 .pagination-link:focus {
-    padding: 12px 0;
+    padding: 14px 0;
     border: 3px solid;
     border-radius: 4px;
     border-color: #756257;
